@@ -1,9 +1,7 @@
 import React from 'react';
 import { render } from 'react-dom';
 import { Provider } from 'react-redux';
-
-import './assets/sass/main.scss';
-import 'leaflet/dist/leaflet.css'
+import 'semantic-ui-css/semantic.min.css';
 import App from './components/App';
 import configureStore from './configureStore';
 
@@ -16,4 +14,3 @@ render(
   document.getElementById('root')
 );
 
-initOneSignal();

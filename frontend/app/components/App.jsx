@@ -10,6 +10,7 @@ import {
 import Register from "./Register";
 import Login from "./Login";
 import ChangePassword from "./ChangePassword";
+import Recompose from "./exampleContainer";
 
 const store = createStore(reducer);
 
@@ -53,6 +54,7 @@ class App extends Component {
               <Route path="/register" component={Register} />
               <Route path="/login" component={Login} />
               <Route path="/ChangePassword" component={ChangePassword} />
+              <Route path="/recompose" component={Recompose} />
               <Route children={() => <h2>Not found</h2>} />
             </Switch>
           </div>

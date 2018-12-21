@@ -22,8 +22,8 @@ app.use((req, res, next)=>{
 });
 
 app.use(routes);
-app.get('/', (req, res) => res.redirect('/login'));
-app.get(['/', '/register', '/login', '/ChangePassword'], (req, res) => res.render('app'));
+app.get('/', (req, res) => res.redirect('/recompose'));
+app.get(['/', '/register', '/login', '/ChangePassword', '/recompose'], (req, res) => res.render('app'));
 
 app.listen(config.app.port, () =>
   logger.info(`Server listening on ${config.app.host}:${config.app.port}`)

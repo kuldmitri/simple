@@ -61,6 +61,13 @@ const postPutDelete = (url, method, body) => {
     });
 };
 
+const testFetch = (value, ms = 1500) => {
+  return new Promise(resolve => {
+    setTimeout(() => resolve(value), ms);
+  });
+};
+
 export {
   fetch,
+  testFetch,
 };
