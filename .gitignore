@@ -1,0 +1,11 @@
+node_modules
+dist
+public
+local.json
+.idea
+breath.iml
+.expo
+.gradle
+build
+env.txt
+local.properties
